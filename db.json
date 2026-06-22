@@ -1,9 +1,36 @@
 {
-  "users": [
-    {"id": 1, "name": "张三", "age": 18},
-    {"id": 2, "name": "李四", "age": 22}
-  ],
-  "goods": [
-    {"id": 1, "title": "手机", "price": 1999}
+  "hookConfigs": [
+    {
+      "id": 1,
+      "configVersion": 2,
+      "cacheExpireSecond": 86400,
+      "targetPackage": "com.kooo.evcc",
+      "globalEnable": true,
+      "encrypt": false,
+      "hookRules": [
+        {
+          "argsValues": ["", "", ""],
+          "className": "com.kooo.evcc.license.NativeBridge",
+          "constructor": false,
+          "description": "许可证验证强制通过",
+          "enable": true,
+          "intercept": false,
+          "methodName": "verifyLicense",
+          "parameterSign": "Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;",
+          "printLog": true,
+          "results": "true",
+          "targetAppMinVer": 10,
+          "targetAppMaxVer": 999,
+          "hookMode": "RETURN",
+          "modifyArgIndex": -1,
+          "throwErr": false,
+          "retryHookCount": 3,
+          "delayHookMs": 500,
+          "classLoaderMatch": "",
+          "whiteSignList": [],
+          "blackSignList": []
+        }
+      ]
+    }
   ]
 }
