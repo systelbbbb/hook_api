@@ -1,10 +1,7 @@
 {
-  "hookConfigs": [
+  "com.kooo.evcc": [
     {
-      "id": 1,
-      "configVersion": 2,
       "cacheExpireSecond": 86400,
-      "targetPackage": "com.kooo.evcc",
       "globalEnable": true,
       "encrypt": false,
       "hookRules": [
