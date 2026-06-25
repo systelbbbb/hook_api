@@ -16,7 +16,7 @@
           "parameterSign": "Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;",
           "printLog": true,
           "results": "true",
-          "targetAppMinVer": 2,
+          "targetAppMinVer": 1,
           "targetAppMaxVer": 999,
           "hookMode": "RETURN",
           "modifyArgIndex": -1,
