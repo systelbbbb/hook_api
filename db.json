@@ -26,9 +26,7 @@
           "classLoaderMatch": "",
           "whiteSignList": [],
           "blackSignList": []
-        }
-      ],
-      {
+        },{
           "argsValues": [""],
           "className": "com.kooo.evcc.license.NativeBridge",
           "constructor": false,
@@ -51,6 +49,8 @@
           "blackSignList": []
         }
       ]
+      
+      
     }
   ],
   
