@@ -103,6 +103,30 @@
                     "classLoaderMatch": "",
                     "whiteSignList": [],
                     "blackSignList": []
+                },
+                {
+                    "argsValues": [
+                    
+                    ],
+                    "className": "com.kooo.evcc.rootservice.RootServiceMain",
+                    "constructor": false,
+                    "description": "校验rootserver",
+                    "enable": true,
+                    "intercept": false,
+                    "methodName": "authenticateClient",
+                    "parameterSign": "Ljava/io/DataInputStream;Ljava/io/DataOutputStream;",
+                    "printLog": true,
+                    "results": "0",
+                    "targetAppMinVer": 1,
+                    "targetAppMaxVer": 999,
+                    "hookMode": "RETURN",
+                    "modifyArgIndex": -1,
+                    "throwErr": false,
+                    "retryHookCount": 3,
+                    "delayHookMs": 500,
+                    "classLoaderMatch": "",
+                    "whiteSignList": [],
+                    "blackSignList": []
                 }
             ]
         }
