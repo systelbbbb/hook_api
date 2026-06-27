@@ -1,57 +1,61 @@
 {
-  "com.kooo.evcc": [
-    {
-      "cacheExpireSecond": 86400,
-      "globalEnable": true,
-      "encrypt": false,
-      "hookRules": [
+    "com.kooo.evcc": [
         {
-          "argsValues": ["", "", ""],
-          "className": "com.kooo.evcc.license.NativeBridge",
-          "constructor": false,
-          "description": "许可证验证强制通过",
-          "enable": true,
-          "intercept": false,
-          "methodName": "verifyLicense",
-          "parameterSign": "Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;",
-          "printLog": true,
-          "results": "true",
-          "targetAppMinVer": 1,
-          "targetAppMaxVer": 999,
-          "hookMode": "RETURN",
-          "modifyArgIndex": -1,
-          "throwErr": false,
-          "retryHookCount": 3,
-          "delayHookMs": 500,
-          "classLoaderMatch": "",
-          "whiteSignList": [],
-          "blackSignList": []
-        },{
-          "argsValues": [""],
-          "className": "com.kooo.evcc.license.NativeBridge",
-          "constructor": false,
-          "description": "许可证验证强制通过",
-          "enable": true,
-          "intercept": false,
-          "methodName": "loadLayoutRes",
-          "parameterSign": "Landroid/content/Context;",
-          "printLog": true,
-          "results": "false",
-          "targetAppMinVer": 1,
-          "targetAppMaxVer": 999,
-          "hookMode": "RETURN",
-          "modifyArgIndex": -1,
-          "throwErr": false,
-          "retryHookCount": 3,
-          "delayHookMs": 500,
-          "classLoaderMatch": "",
-          "whiteSignList": [],
-          "blackSignList": []
+            "cacheExpireSecond": 86400,
+            "globalEnable": true,
+            "encrypt": false,
+            "hookRules": [
+                {
+                    "argsValues": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "className": "com.kooo.evcc.license.NativeBridge",
+                    "constructor": false,
+                    "description": "许可证验证强制通过",
+                    "enable": true,
+                    "intercept": false,
+                    "methodName": "verifyLicense",
+                    "parameterSign": "Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;",
+                    "printLog": true,
+                    "results": "true",
+                    "targetAppMinVer": 1,
+                    "targetAppMaxVer": 999,
+                    "hookMode": "RETURN",
+                    "modifyArgIndex": -1,
+                    "throwErr": false,
+                    "retryHookCount": 3,
+                    "delayHookMs": 500,
+                    "classLoaderMatch": "",
+                    "whiteSignList": [],
+                    "blackSignList": []
+                },
+                {
+                    "argsValues": [
+                        ""
+                    ],
+                    "className": "com.kooo.evcc.license.NativeBridge",
+                    "constructor": false,
+                    "description": "许可证验证强制通过",
+                    "enable": true,
+                    "intercept": false,
+                    "methodName": "loadLayoutRes",
+                    "parameterSign": "Landroid/content/Context;",
+                    "printLog": true,
+                    "results": "false",
+                    "targetAppMinVer": 1,
+                    "targetAppMaxVer": 999,
+                    "hookMode": "RETURN",
+                    "modifyArgIndex": -1,
+                    "throwErr": false,
+                    "retryHookCount": 3,
+                    "delayHookMs": 500,
+                    "classLoaderMatch": "",
+                    "whiteSignList": [],
+                    "blackSignList": []
+                }
+            ]
         }
-      ]
-      
-      
-    }
-  ],
-  
+    ]
 }
